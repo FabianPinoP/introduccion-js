@@ -1,0 +1,49 @@
+El DOM (Document Object Model) es una interfaz de programación para documentos HTML y XML. 
+Representa la estructura del documento como un árbol de objetos, donde cada elemento, atributo 
+y texto en el documento es un nodo en ese árbol. El DOM permite a los programas y scripts acceder y 
+manipular dinámicamente el contenido, estructura y estilo de un documento HTML o XML, lo que permite 
+crear páginas web interactivas y dinámicas.
+
+En esencia, el DOM proporciona una forma de interactuar con una página web mediante la manipulación 
+de su contenido y estructura desde el código JavaScript o cualquier otro lenguaje de programación que 
+admita el acceso al DOM.
+
+Cuando un navegador web carga una página HTML, construye una representación del documento utilizando el DOM. 
+Cada elemento HTML, como encabezados (<h1>, <h2>), párrafos (<p>), listas (<ul>, <ol>) y otros elementos, se 
+convierten en nodos del árbol DOM. Los atributos y el contenido de texto también se representan como nodos en el árbol.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo del DOM</title>
+</head>
+<body>
+  <h1>Título de la página</h1>
+  <p>Este es un párrafo de ejemplo.</p>
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+  </ul>
+</body>
+</html>
+
+
+para la siguiente estructura html el dom deberia ser asi
+
+- Document
+  - html
+    - head
+      - title
+        - "Ejemplo del DOM"
+    - body
+      - h1
+        - "Título de la página"
+      - p
+        - "Este es un párrafo de ejemplo."
+      - ul
+        - li
+          - "Elemento 1"
+        - li
+          - "Elemento 2"
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- cargando js en el head -->
+    <!-- <script>alert("hola")</script> -->
+  </head>
+  <body>
+    <button class="log">logs</button>
+
+    <p id="probando">seleccionando con get element by id</p>
+
+    <!-- querySelector() y querySelectorAll() -->
+
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+    </ul>
+
+    <p class="probando2">seleccionando con querySelector</p>
+
+    <!-- innerHTML -->
+
+    <div id="miDiv">Texto original</div>
+
+    <!--modificando estilos -->
+    <div id="miElemento">Elemento a modificar</div>
+
+    <!-- ejemplo con onclick -->
+
+    <button
+      onclick="
+body = document.querySelector('body')
+body.style.backgroundColor='black'
+"
+    >
+      A negro
+    </button>
+
+    <input class="quantity" type="number">
+    <input class="price" type="number">
+
+    <button class="button">probando desde el documento js</button>
+
+    <div class="total"></div>
+
+    <!-- cargando js desde un archivo externo -->
+    <script src="./index.js"></script>
+
+    <!-- cargando js al final del body -->
+    <!-- <script>alert("final body")</script> -->
+  </body>
+</html>
